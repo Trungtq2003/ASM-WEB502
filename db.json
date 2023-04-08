@@ -1,0 +1,106 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Product A"
+    },
+    {
+      "name": "new product",
+      "id": 2
+    },
+    {
+      "name": "new product 2",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "name": "abcdèghi",
+      "price": "400"
+    },
+    {
+      "name": "New Product 100 updated 2",
+      "price": "2",
+      "id": 5
+    },
+    {
+      "name": "New Product 1000",
+      "price": "1000",
+      "id": 6
+    },
+    {
+      "name": "Iphone",
+      "price": "100000",
+      "image": "404",
+      "desc": "1231321",
+      "id": 8
+    },
+    {
+      "name": "123123",
+      "price": "12312312",
+      "image": "3123123",
+      "desc": "131231",
+      "id": 9
+    },
+    {
+      "name": "dog",
+      "price": "123",
+      "image": {
+        "file": {
+          "uid": "rc-upload-1680881094550-2"
+        },
+        "fileList": [
+          {
+            "uid": "rc-upload-1680881094550-2",
+            "lastModified": 1666103557984,
+            "lastModifiedDate": "2022-10-18T14:32:37.984Z",
+            "name": "dog.jpg",
+            "size": 33214,
+            "type": "image/jpeg",
+            "percent": 0,
+            "originFileObj": {
+              "uid": "rc-upload-1680881094550-2"
+            }
+          }
+        ]
+      },
+      "desc": "456",
+      "id": 10
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Danh muc A"
+    },
+    {
+      "id": 2,
+      "name": "Danh muc B"
+    },
+    {
+      "name": "Danh Muc C",
+      "id": 3
+    },
+    {
+      "name": "1",
+      "email": "2",
+      "password": "3",
+      "id": 4
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "name": "trung",
+      "email": "admin@gmail.com",
+      "role": "admin",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "name": "trinh",
+      "email": "member@gmail.com",
+      "role": "member",
+      "password": "123456"
+    }
+  ]
+}
