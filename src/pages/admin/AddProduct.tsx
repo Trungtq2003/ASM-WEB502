@@ -29,19 +29,14 @@ const props: UploadProps = {
     },
 };
 
-const AddProductPage = (props: IProps) => { // nhận props từ App.tsx 
+const AddProductPage = (props: IProps) => { 
     /*
         {
 
         }
     */
-    const navigate = useNavigate() // khởi tạo navigate để điều hướng
+    const navigate = useNavigate()
     const [imageUrl, setImageUrl] = useState<string | undefined>(undefined);
-    // const { register, handleSubmit } = useForm()
-    // const onHandleSubmit = (data) => {
-    //     props.onAdd(data);
-    //     navigate('/admin/products')
-    // }
 
 
     const onFinish = (values: any) => {

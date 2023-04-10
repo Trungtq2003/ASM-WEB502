@@ -7,48 +7,15 @@
       "desc": "Amazon đang đưa ra dẫn chứng để giải thích tại sao Kindle Paperwhite lại là trình đọc sách điện tử tiên tiến nhất trên thế giới. Đặc biệt là tính năng nổi bật mà không phải trình đọc sách điện tử nào cũng có được. Đó là ngay cả khi đang đi dưới ánh nắng mặt trời thì Paperwhite vẫn có thể cung cấp rõ ràng văn bản và hình ảnh một cách sắc nét, không để bị chói mắt."
     },
     {
-      "name": "new product 2",
-      "id": 3
-    },
-    {
-      "id": 4,
-      "name": "abcdèghi",
-      "price": "400"
-    },
-    {
-      "name": "New Product 100 updated 2",
-      "price": "2",
-      "id": 5
-    },
-    {
-      "name": "New Product 1000",
-      "price": "1000",
-      "id": 6
-    },
-    {
-      "name": "Iphone",
-      "price": "100000",
-      "image": "404",
-      "desc": "1231321",
-      "id": 8
-    },
-    {
-      "name": "123123",
-      "price": "12312312",
-      "image": "3123123",
-      "desc": "131231",
-      "id": 9
-    },
-    {
-      "name": "dog",
-      "price": "123",
+      "name": "Sản Phẩm B",
+      "price": "200000",
       "image": {
         "file": {
-          "uid": "rc-upload-1680881094550-2"
+          "uid": "rc-upload-1681142438772-4"
         },
         "fileList": [
           {
-            "uid": "rc-upload-1680881094550-2",
+            "uid": "rc-upload-1681142438772-4",
             "lastModified": 1666103557984,
             "lastModifiedDate": "2022-10-18T14:32:37.984Z",
             "name": "dog.jpg",
@@ -56,38 +23,163 @@
             "type": "image/jpeg",
             "percent": 0,
             "originFileObj": {
-              "uid": "rc-upload-1680881094550-2"
+              "uid": "rc-upload-1681142438772-4"
             }
           }
         ]
       },
-      "desc": "456",
-      "id": 10
+      "desc": "Amazon đang đưa ra dẫn chứng để giải thích tại sao Kindle Paperwhite lại là trình đọc sách điện tử tiên tiến nhất trên thế giới. Đặc biệt là tính năng nổi bật mà không phải trình đọc sách điện tử nào cũng có được. Đó là ngay cả khi đang đi dưới ánh nắng mặt trời thì Paperwhite vẫn có thể cung cấp rõ ràng văn bản và hình ảnh một cách sắc nét, không để bị chói mắt.",
+      "id": 2
     },
     {
-      "id": 11,
-      "name": "SOS",
-      "price": "123456",
+      "name": "Sản Phẩm C",
+      "price": "300000",
       "image": {
         "file": {
-          "uid": "rc-upload-1680948852258-2"
+          "uid": "rc-upload-1681142438772-7"
         },
         "fileList": [
           {
-            "uid": "rc-upload-1680948852258-2",
-            "lastModified": 1680666340100,
-            "lastModifiedDate": "2023-04-05T03:45:40.100Z",
-            "name": "Công đoàn.PNG",
-            "size": 89582,
-            "type": "image/png",
+            "uid": "rc-upload-1681142438772-7",
+            "lastModified": 1666103557984,
+            "lastModifiedDate": "2022-10-18T14:32:37.984Z",
+            "name": "dog.jpg",
+            "size": 33214,
+            "type": "image/jpeg",
             "percent": 0,
             "originFileObj": {
-              "uid": "rc-upload-1680948852258-2"
+              "uid": "rc-upload-1681142438772-7"
             }
           }
         ]
       },
-      "desc": "HAY"
+      "desc": "\tAmazon đang đưa ra dẫn chứng để giải thích tại sao Kindle Paperwhite lại là trình đọc sách điện tử tiên tiến nhất trên thế giới. Đặc biệt là tính năng nổi bật mà không phải trình đọc sách điện tử nào cũng có được. Đó là ngay cả khi đang đi dưới ánh nắng mặt trời thì Paperwhite vẫn có thể cung cấp rõ ràng văn bản và hình ảnh một cách sắc nét, không để bị chói mắt.",
+      "id": 3
+    },
+    {
+      "name": "Sản Phảm D",
+      "price": "400000",
+      "image": {
+        "file": {
+          "uid": "rc-upload-1681142438772-10"
+        },
+        "fileList": [
+          {
+            "uid": "rc-upload-1681142438772-10",
+            "lastModified": 1666103557984,
+            "lastModifiedDate": "2022-10-18T14:32:37.984Z",
+            "name": "dog.jpg",
+            "size": 33214,
+            "type": "image/jpeg",
+            "percent": 0,
+            "originFileObj": {
+              "uid": "rc-upload-1681142438772-10"
+            }
+          }
+        ]
+      },
+      "desc": "\tAmazon đang đưa ra dẫn chứng để giải thích tại sao Kindle Paperwhite lại là trình đọc sách điện tử tiên tiến nhất trên thế giới. Đặc biệt là tính năng nổi bật mà không phải trình đọc sách điện tử nào cũng có được. Đó là ngay cả khi đang đi dưới ánh nắng mặt trời thì Paperwhite vẫn có thể cung cấp rõ ràng văn bản và hình ảnh một cách sắc nét, không để bị chói mắt.",
+      "id": 4
+    },
+    {
+      "name": "Sản Phẩm E",
+      "price": "500000",
+      "image": {
+        "file": {
+          "uid": "rc-upload-1681142438772-13"
+        },
+        "fileList": [
+          {
+            "uid": "rc-upload-1681142438772-13",
+            "lastModified": 1666103557984,
+            "lastModifiedDate": "2022-10-18T14:32:37.984Z",
+            "name": "dog.jpg",
+            "size": 33214,
+            "type": "image/jpeg",
+            "percent": 0,
+            "originFileObj": {
+              "uid": "rc-upload-1681142438772-13"
+            }
+          }
+        ]
+      },
+      "desc": "\tAmazon đang đưa ra dẫn chứng để giải thích tại sao Kindle Paperwhite lại là trình đọc sách điện tử tiên tiến nhất trên thế giới. Đặc biệt là tính năng nổi bật mà không phải trình đọc sách điện tử nào cũng có được. Đó là ngay cả khi đang đi dưới ánh nắng mặt trời thì Paperwhite vẫn có thể cung cấp rõ ràng văn bản và hình ảnh một cách sắc nét, không để bị chói mắt.",
+      "id": 5
+    },
+    {
+      "name": "Sản Phẩm F",
+      "price": "600000",
+      "image": {
+        "file": {
+          "uid": "rc-upload-1681142438772-16"
+        },
+        "fileList": [
+          {
+            "uid": "rc-upload-1681142438772-16",
+            "lastModified": 1666103557984,
+            "lastModifiedDate": "2022-10-18T14:32:37.984Z",
+            "name": "dog.jpg",
+            "size": 33214,
+            "type": "image/jpeg",
+            "percent": 0,
+            "originFileObj": {
+              "uid": "rc-upload-1681142438772-16"
+            }
+          }
+        ]
+      },
+      "desc": "\tAmazon đang đưa ra dẫn chứng để giải thích tại sao Kindle Paperwhite lại là trình đọc sách điện tử tiên tiến nhất trên thế giới. Đặc biệt là tính năng nổi bật mà không phải trình đọc sách điện tử nào cũng có được. Đó là ngay cả khi đang đi dưới ánh nắng mặt trời thì Paperwhite vẫn có thể cung cấp rõ ràng văn bản và hình ảnh một cách sắc nét, không để bị chói mắt.",
+      "id": 6
+    },
+    {
+      "name": "Sản Phẩm G",
+      "price": "700000",
+      "image": {
+        "file": {
+          "uid": "rc-upload-1681142438772-19"
+        },
+        "fileList": [
+          {
+            "uid": "rc-upload-1681142438772-19",
+            "lastModified": 1666103557984,
+            "lastModifiedDate": "2022-10-18T14:32:37.984Z",
+            "name": "dog.jpg",
+            "size": 33214,
+            "type": "image/jpeg",
+            "percent": 0,
+            "originFileObj": {
+              "uid": "rc-upload-1681142438772-19"
+            }
+          }
+        ]
+      },
+      "desc": "\tAmazon đang đưa ra dẫn chứng để giải thích tại sao Kindle Paperwhite lại là trình đọc sách điện tử tiên tiến nhất trên thế giới. Đặc biệt là tính năng nổi bật mà không phải trình đọc sách điện tử nào cũng có được. Đó là ngay cả khi đang đi dưới ánh nắng mặt trời thì Paperwhite vẫn có thể cung cấp rõ ràng văn bản và hình ảnh một cách sắc nét, không để bị chói mắt.",
+      "id": 7
+    },
+    {
+      "name": "Sản Phẩm H",
+      "price": "800000",
+      "image": {
+        "file": {
+          "uid": "rc-upload-1681142438772-22"
+        },
+        "fileList": [
+          {
+            "uid": "rc-upload-1681142438772-22",
+            "lastModified": 1666103557984,
+            "lastModifiedDate": "2022-10-18T14:32:37.984Z",
+            "name": "dog.jpg",
+            "size": 33214,
+            "type": "image/jpeg",
+            "percent": 0,
+            "originFileObj": {
+              "uid": "rc-upload-1681142438772-22"
+            }
+          }
+        ]
+      },
+      "desc": "\tAmazon đang đưa ra dẫn chứng để giải thích tại sao Kindle Paperwhite lại là trình đọc sách điện tử tiên tiến nhất trên thế giới. Đặc biệt là tính năng nổi bật mà không phải trình đọc sách điện tử nào cũng có được. Đó là ngay cả khi đang đi dưới ánh nắng mặt trời thì Paperwhite vẫn có thể cung cấp rõ ràng văn bản và hình ảnh một cách sắc nét, không để bị chói mắt.",
+      "id": 8
     }
   ],
   "category": [
