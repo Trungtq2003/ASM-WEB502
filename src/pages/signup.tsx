@@ -13,7 +13,8 @@ const signup = (props: IProps) => {
 
     const onFinish = (values: any) => {
         props.onAdd(values);
-        navigate('/signup')
+        alert("Đăng ký thành công")
+        navigate('/signin')
     };
 
     const onFinishFailed = (errorInfo: any) => {
@@ -21,11 +22,6 @@ const signup = (props: IProps) => {
     };
   return (
     <div>
-            {/* <form action="" onSubmit={handleSubmit(onHandleSubmit)}>
-                <input type="text" placeholder='Product Name' {...register('name')} />
-                <input type="number" {...register('price')} />
-                <button type="submit">Add New Product</button>
-            </form> */}
             <Form
                 name="basic"
                 labelCol={{ span: 8 }}
@@ -58,7 +54,9 @@ const signup = (props: IProps) => {
                     rules={[{ required: true, message: 'Please input your password!' }]}
                 >
                     <Input />
-                </Form.Item>                
+                </Form.Item> 
+
+                    <Input name="role" style={{visibility: 'hidden'}} />
 
                 <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
                     <Button type="primary" htmlType="submit">

@@ -10,11 +10,11 @@ const signup = (user: IUser) => {
 }
 
 const login = (user: IUser) => {
-    return instance.post('/signin', user);
+    return instance.post('/login', user);
 }
 
 const removeUser = (id: number) => {
-    return instance.delete('/category/' + id);
+    return instance.delete('/user/' + id);
 }
 
 export { signup, login, getUser, removeUser }

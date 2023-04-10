@@ -12,7 +12,7 @@ import WebsiteLayout from './pages/layouts/WebsiteLayout'
 import Signin from './pages/signin'
 import Signup from './pages/signup'
 import { IUser } from './types/user'
-import { getUser, signup } from './api/auth'
+import { getUser, removeUser, signup } from './api/auth'
 import { ICategory } from './types/category'
 import ListCategoryPage from './pages/admin/ListCategory'
 import { addCategory, deleteCategory, getAllCategory } from './api/category'
@@ -53,14 +53,14 @@ function App() {
     signup(user).then(() => getUser().then(({ data }) => setUser(data)))
   }
   const onHandleRemoveUser = (id: number) => {
-    deleteCategory(id).then(() => setCategory(category.filter((item: ICategory) => item.id !== id)))
+    removeUser(id).then(() => setUser(user.filter((item: IUser) => item.id !== id)))
   }
 
   return (
     <div className="App">
       <Routes>
         <Route path='/' element={<WebsiteLayout />}>
-          <Route index element={<HomePage />} />
+          <Route index element={<HomePage products={products} category={category} />} />
           <Route path='signin' element={<Signin />} />
           <Route path='signup' element={<Signup onAdd={onHandleAddUser} />} />
           <Route path='products' element={<ProductPage products={products} onRemove={onHandleRemove} />} />
@@ -70,7 +70,7 @@ function App() {
           <Route index element={<Dashboard/>}/>
           <Route path='products'>
             <Route index element={<ProductManagementPage products={products} onRemove={onHandleRemove} />} />
-            <Route path='add' element={<AddProductPage onAdd={onHandleAdd} />} />
+            <Route path='add' element={<AddProductPage onAdd={onHandleAdd} category={category} />} />
             <Route path=':id/update' element={<UpdateProductPage onUpdate={onHandleUpdate} products={products} />} />
           </Route>
           <Route path='category'>

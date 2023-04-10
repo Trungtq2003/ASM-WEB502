@@ -1,42 +1,25 @@
-import jwt from "jsonwebtoken";
-import { IUser } from "../types/user";
+import { NextFunction } from "express";
+import jwt, { JwtPayload } from "jsonwebtoken";
+import { IUser } from "../interfaces/user";
+import User from '../models/user';
 
-export const checkPermission = async (req, res, next) => {
+export const authenticate = async (req, res, next: NextFunction) => {
     try {
-        if (!req.headers.authorization) {
-            return res.status(403).json({
-                message: "Bạn chưa đăng nhập",
-            });
+        const authHeader = req.headers.authorization;
+        if (!authHeader) throw new Error("Bạn phải đăng nhập để thực hiện hành động này");
+
+        const token = authHeader && authHeader.split(" ")[1] as string;
+        const secretKey: string = process.env.JWT_SECRET!;
+
+        const { id } = jwt.verify(token, secretKey) as JwtPayload
+        const user = await User.findById(id) as IUser;
+        if (!user) {
+            throw new Error("Không tìm thấy người dùng");
         }
-        // Bearer xxx ->
-        const token = req.headers.authorization.split(" ")[1]; // ["bearer", "xxx"]
-        console.log("token", token);
-        jwt.verify(token, "banThayDat", async (error, payload) => {
-            console.log("error", error);
-            if (error) {
-                if (error.name == "TokenExpiredError") {
-                    return res.json({
-                        message: "Token không hợp lệ",
-                    });
-                }
-                if (error.name == "TokenExpiredError") {
-                    return res.json({
-                        message: "Token hết hạn",
-                    });
-                }
-            }
-            const user = await User.findById(payload.id);
-            console.log(user);
-            if (!user && user.role !== "admin") {
-                return res.status(403).json({
-                    message: "Bạn không có quyền truy cập tài nguyên, cút!",
-                });
-            }
-            next();
-        });
+        req.user = user
+        next();
+
     } catch (error) {
-        return res.status(401).json({
-            message: error.message || "Token không hợp lệ",
-        });
+        res.status(401).json({ message: error.message });
     }
 };

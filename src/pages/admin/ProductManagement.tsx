@@ -19,7 +19,12 @@ interface IProps {
 
 const ProductManagementPage = (props: IProps) => {
     const removeProduct = (id: number) => {
-        props.onRemove(id)
+        const result = confirm("bạn có muốn xóa không");
+        if (result == true){
+            props.onRemove(id)
+        }else {
+
+        }
     }
     const columns: ColumnsType<DataType> = [
         {
@@ -65,9 +70,10 @@ const ProductManagementPage = (props: IProps) => {
 
     return (
         <div>
-            <Button type='primary'><Link to={'/admin/products/add'}>Add New Product</Link></Button>
-            <Button type='primary'><Link to={'/admin/category/add'}>Add New Category</Link></Button>
-            <Table columns={columns} dataSource={data} pagination={{ pageSize: 5 }} />
+            {/* <Button type='primary'><Link to={'/admin/products/add'}>Add New Product</Link></Button>
+            <Button type='primary'><Link to={'/admin/category/add'}>Add New Category</Link></Button> */}
+            <h1>Product Manager</h1>
+            <Table columns={columns} dataSource={data} pagination={{ pageSize: 10 }} />
         </div>
     )
 }

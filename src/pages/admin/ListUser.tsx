@@ -19,7 +19,11 @@ interface IProps {
 
 const ListUserPage = (props: IProps) => {
     const removeUser = (id: number) => {
-        props.onRemove(id)
+        const result = confirm("bạn có muốn xóa không");
+        if (result == true) {
+            props.onRemove(id)
+        } else {
+        }
     }
     const columns: ColumnsType<DataType> = [
         {
@@ -32,19 +36,16 @@ const ListUserPage = (props: IProps) => {
             title: 'email',
             dataIndex: 'email',
             key: 'email',
-            render: (text) => <a>{text}</a>,
         },
         {
             title: 'password',
             dataIndex: 'password',
             key: 'password',
-            render: (text) => <a>{text}</a>,
         },
         {
             title: 'role',
             dataIndex: 'role',
             key: 'role',
-            render: (text) => <a>{text}</a>,
         },
         {
             title: 'Action',

@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form'
 import { useNavigate, useParams } from 'react-router-dom'
 import { IProduct } from '../../types/product'
 import { Button, Form, Input } from 'antd';
+import TextArea from 'antd/es/input/TextArea';
 interface IProps {
     products: IProduct[],
     onUpdate: (product: IProduct) => void
@@ -137,9 +138,9 @@ const UpdateProductPage = (props: IProps) => {
                 <Form.Item
                     label="Product Image"
                     name="image"
-                    rules={[{ required: true, message: 'Please input image!' }]}
+                    // rules={[{ required: true, message: 'Please input image!' }]}
                 >
-                    <Input />
+                    <Input disabled/>
                 </Form.Item>
                 
                 <Form.Item
@@ -147,7 +148,7 @@ const UpdateProductPage = (props: IProps) => {
                     name="desc"
                     rules={[{ required: true, message: 'Please input description!' }]}
                 >
-                    <Input />
+                    <TextArea rows={6} />
                 </Form.Item>
 
                 

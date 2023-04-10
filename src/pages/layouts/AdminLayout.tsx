@@ -6,6 +6,7 @@ import {
   PieChartOutlined,
   TeamOutlined,
   UserOutlined,
+  HomeOutlined,
 } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
@@ -39,7 +40,7 @@ const items: MenuItem[] = [
     getItem('List Categories', '/admin/category'),
     getItem('Add category', '/admin/category/add')
   ]),
-  getItem('Files', '9', ),
+  getItem('Back Home Page', '/', <HomeOutlined />),
 ];
 
 
@@ -68,7 +69,9 @@ const AdminLayout = () => {
       </Sider>
       <Layout className="site-layout">
         <Header style={{ padding: 0, background: colorBgContainer, textAlign: 'center', }}>
-          <h1 style={{ margin: 'auto' }} >ADMIN</h1>
+          <div>
+            <h1 style={{ margin: 'auto' }} >ADMIN</h1>
+          </div>
         </Header>
         <Content style={{ margin: '0 16px' }}>
           <Breadcrumb style={{ margin: '16px 0' }}>

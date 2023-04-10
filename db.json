@@ -2,11 +2,9 @@
   "products": [
     {
       "id": 1,
-      "name": "Product A"
-    },
-    {
-      "name": "new product",
-      "id": 2
+      "name": "Product A",
+      "price": "100000",
+      "desc": "Amazon đang đưa ra dẫn chứng để giải thích tại sao Kindle Paperwhite lại là trình đọc sách điện tử tiên tiến nhất trên thế giới. Đặc biệt là tính năng nổi bật mà không phải trình đọc sách điện tử nào cũng có được. Đó là ngay cả khi đang đi dưới ánh nắng mặt trời thì Paperwhite vẫn có thể cung cấp rõ ràng văn bản và hình ảnh một cách sắc nét, không để bị chói mắt."
     },
     {
       "name": "new product 2",
@@ -65,6 +63,31 @@
       },
       "desc": "456",
       "id": 10
+    },
+    {
+      "id": 11,
+      "name": "SOS",
+      "price": "123456",
+      "image": {
+        "file": {
+          "uid": "rc-upload-1680948852258-2"
+        },
+        "fileList": [
+          {
+            "uid": "rc-upload-1680948852258-2",
+            "lastModified": 1680666340100,
+            "lastModifiedDate": "2023-04-05T03:45:40.100Z",
+            "name": "Công đoàn.PNG",
+            "size": 89582,
+            "type": "image/png",
+            "percent": 0,
+            "originFileObj": {
+              "uid": "rc-upload-1680948852258-2"
+            }
+          }
+        ]
+      },
+      "desc": "HAY"
     }
   ],
   "category": [
@@ -79,12 +102,6 @@
     {
       "name": "Danh Muc C",
       "id": 3
-    },
-    {
-      "name": "1",
-      "email": "2",
-      "password": "3",
-      "id": 4
     }
   ],
   "user": [
@@ -101,6 +118,12 @@
       "email": "member@gmail.com",
       "role": "member",
       "password": "123456"
+    },
+    {
+      "name": "test",
+      "email": "test@gmail.com",
+      "password": "123456",
+      "id": 3
     }
   ]
 }

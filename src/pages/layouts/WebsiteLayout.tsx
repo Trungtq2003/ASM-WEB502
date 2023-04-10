@@ -1,6 +1,7 @@
 import React from 'react'
 import { Outlet, useNavigate } from 'react-router-dom'
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import { UserOutlined } from '@ant-design/icons';
 
 const { Header, Content, Footer } = Layout;
 
@@ -34,6 +35,7 @@ const WebsiteLayout: React.FC = () => {
                                 key: "/products"
                             },
                             {
+                                icon: <UserOutlined />,
                                 label: "Signup",
                                 key: "/signup"
                             }
@@ -42,7 +44,7 @@ const WebsiteLayout: React.FC = () => {
                 </Header>
                 <Content style={{ padding: '0 50px' }}>
                     <Breadcrumb style={{ margin: '16px 0' }}>
-                        <Breadcrumb.Item>Home</Breadcrumb.Item>
+                        {/* <Breadcrumb.Item>Home</Breadcrumb.Item> */}
                     </Breadcrumb>
                     <div className="site-layout-content" style={{ background: colorBgContainer }}>
                         <Outlet />

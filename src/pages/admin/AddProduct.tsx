@@ -72,11 +72,7 @@ const AddProductPage = (props: IProps) => { // nhận props từ App.tsx
 
     return (
         <div>
-            {/* <form action="" onSubmit={handleSubmit(onHandleSubmit)}>
-                <input type="text" placeholder='Product Name' {...register('name')} />
-                <input type="number" {...register('price')} />
-                <button type="submit">Add New Product</button>
-            </form> */}
+            <h1>Add New Products</h1>
             <Form
                 name="basic"
                 labelCol={{ span: 8 }}
@@ -104,7 +100,7 @@ const AddProductPage = (props: IProps) => { // nhận props từ App.tsx
                 </Form.Item>
 
                 <Form.Item
-                    label='Product'
+                    label='Image'
                     name='image'
                     rules={[{ required: true, message: 'Ảnh không được bỏ trống' }]}
                 >
