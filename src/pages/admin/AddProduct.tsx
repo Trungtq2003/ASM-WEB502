@@ -30,11 +30,7 @@ const props: UploadProps = {
 };
 
 const AddProductPage = (props: IProps) => { 
-    /*
-        {
 
-        }
-    */
     const navigate = useNavigate()
     const [imageUrl, setImageUrl] = useState<string | undefined>(undefined);
 

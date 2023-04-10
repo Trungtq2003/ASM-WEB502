@@ -1,0 +1,6 @@
+Chức năng làm được:
+- thêm, sửa, xóa (product)
+- thêm, sửa, xóa (category)
+- đăng ký
+- giao diện
+- chi tiết sản phẩm
